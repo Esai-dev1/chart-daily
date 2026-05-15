@@ -15,15 +15,12 @@
   <!-- HERO -->
   <section class="hero-bg py-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <div class="inline-flex items-center gap-2 bg-white/10 text-white text-sm px-4 py-2 rounded-full mb-6">
-        <i class="fas fa-robot"></i> Powered by Grok • Real-time from X
-      </div>
       <h1 class="text-6xl font-bold tracking-tighter leading-none mb-4">
         The smartest finance charts<br>delivered to your inbox.<br>
         <span class="text-emerald-400">Every single morning.</span>
       </h1>
       <p class="text-2xl text-zinc-400 max-w-2xl mx-auto mb-10">
-        Grok scans X + macro sources in seconds. You get 15–25 highest-signal charts + AI insights. Zero fluff. Zero ads.
+        15 highest-signal charts and insights. Zero fluff. Zero ads.
       </p>
       <div class="flex items-center justify-center gap-4">
         <a href="#waitlist" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})" 
@@ -36,19 +33,22 @@
     </div>
   </section>
 
-  <!-- SAMPLE EDITION -->
+  <!-- SAMPLE EDITION (real charts from today) -->
   <section class="py-16 bg-zinc-900">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-4xl font-semibold text-center mb-4">See exactly what you’ll wake up to</h2>
       <p class="text-center text-zinc-400 mb-12">Grok Chart Daily – May 15, 2026 (live pull)</p>
 
       <div class="grid md:grid-cols-2 gap-8">
+        <!-- Chart 1 -->
         <div class="bg-zinc-950 rounded-3xl p-6 border border-zinc-800">
           <img src="https://pbs.twimg.com/media/HIYGn0XbUAAsXFI.jpg" alt="Gold/Silver Ratio" class="w-full rounded-2xl mb-4">
           <h3 class="font-semibold">Gold-to-Silver Ratio Breakdown</h3>
           <p class="text-emerald-400 text-sm">@hajiyev_rashad</p>
           <p class="text-zinc-400 text-sm mt-2">Grok Insight: Retest complete. Classic bullish setup for the entire precious-metals complex.</p>
         </div>
+
+        <!-- Chart 2 -->
         <div class="bg-zinc-950 rounded-3xl p-6 border border-zinc-800">
           <img src="https://pbs.twimg.com/media/HIX_2rAWwAAxKux.jpg" alt="30Y Yield" class="w-full rounded-2xl mb-4">
           <h3 class="font-semibold">US 30-Year Yield at 2007 Highs</h3>
@@ -56,14 +56,61 @@
           <p class="text-zinc-400 text-sm mt-2">Grok Insight: Ascending triangle breakout = higher-for-longer confirmed.</p>
         </div>
       </div>
+
+      <div class="text-center mt-12">
+        <p class="text-zinc-400">+ 13 more charts in the full edition • Macro, crypto, equities, commodities</p>
+      </div>
     </div>
   </section>
 
-  <!-- WHY SECTION + PRICING + FOOTER (same as before) -->
-  <!-- (The full code I gave earlier had more sections — if the editor feels too long, just paste what I gave above for now and we can add the rest later) -->
+  <!-- WHY GROK CHART DAILY -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">Why traders are obsessed</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <i class="fas fa-bolt text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">45 seconds</h3>
+          <p class="text-zinc-400">Every chart is found, scored, and analyzed instantly.</p>
+        </div>
+        <div class="text-center">
+          <i class="fas fa-eye text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Vision-powered</h3>
+          <p class="text-zinc-400">AI actually reads every chart and spots the real edge.</p>
+        </div>
+        <div class="text-center">
+          <i class="fas fa-chart-line text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Beat the noise</h3>
+          <p class="text-zinc-400">Only the 15 highest-signal charts. No spam. No fluff.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING TEASER -->
+  <section id="waitlist" class="py-16 bg-emerald-900/20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold mb-4">Launch special – Lifetime 50% off</h2>
+      <p class="text-2xl text-zinc-400 mb-8">First 500 members only</p>
+      
+      <div class="bg-zinc-950 rounded-3xl p-8 max-w-md mx-auto">
+        <p class="text-emerald-400 font-medium">Premium Plan</p>
+        <div class="flex justify-center items-baseline gap-2 my-4">
+          <span class="text-7xl font-bold">$9.50</span>
+          <span class="text-2xl text-zinc-400 line-through">$19/mo</span>
+        </div>
+        <p class="text-zinc-400">or $99 lifetime (one-time)</p>
+        <button onclick="alert('Waitlist form would go here – connect Beehiiv next')" 
+                class="mt-8 w-full bg-white text-black py-6 rounded-2xl font-semibold text-xl">
+          Reserve My Spot Now
+        </button>
+        <p class="text-xs text-zinc-500 mt-4">Cancel anytime • 30-day money-back guarantee</p>
+      </div>
+    </div>
+  </section>
 
   <footer class="py-12 text-center text-zinc-500 text-sm">
-    © Chart Daily 2026 • Built live
+    © esaiResearch 2026
   </footer>
 </body>
 </html>
