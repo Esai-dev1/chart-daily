@@ -14,37 +14,31 @@
 <body class="bg-zinc-950 text-white">
 
   <!-- HERO -->
-  <section class="hero-bg py-20">
+  <section class="hero-bg py-24">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h1 class="text-6xl font-bold tracking-tighter leading-none mb-4">
+      <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-6">
         The highest-signal finance charts,<br>curated daily by experienced investors.
       </h1>
-      <p class="text-2xl text-zinc-400 max-w-2xl mx-auto mb-12">
-        Start free with 5 charts daily.<br>Upgrade to Premium for 12 charts + deeper insights.
+      <p class="text-2xl md:text-3xl text-zinc-400 max-w-3xl mx-auto mb-12">
+        5 charts free every day.<br>
+        Upgrade for 12 charts + deeper insights.
       </p>
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <!-- Free CTA -->
-        <a href="#free" 
-           class="bg-white text-black font-semibold text-xl px-10 py-6 rounded-2xl flex items-center gap-3 hover:bg-zinc-100 transition">
-          Get 5 Charts Free
-          <i class="fas fa-arrow-right"></i>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#free" class="bg-white text-black font-semibold text-xl px-10 py-6 rounded-3xl flex items-center justify-center gap-3 hover:bg-zinc-100 transition">
+          Get 5 Charts Free Daily
         </a>
-
-        <!-- Premium CTA -->
-        <a href="#premium" 
-           class="bg-emerald-400 hover:bg-emerald-300 text-black font-semibold text-xl px-10 py-6 rounded-2xl flex items-center gap-3 transition">
+        <a href="#premium" class="bg-emerald-400 hover:bg-emerald-300 text-black font-semibold text-xl px-10 py-6 rounded-3xl flex items-center justify-center gap-3 transition">
           Go Premium — $15/mo or $149/year
-          <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </div>
   </section>
 
   <!-- SAMPLE CHARTS -->
-  <section class="py-16 bg-zinc-900">
+  <section class="py-20 bg-zinc-900">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-semibold text-center mb-4">See what you’ll wake up to</h2>
+      <h2 class="text-4xl font-semibold text-center mb-4">See exactly what you’ll wake up to</h2>
       <p class="text-center text-zinc-400 mb-12">Charted Insight – May 15, 2026</p>
 
       <div class="grid md:grid-cols-2 gap-8">
@@ -52,49 +46,56 @@
           <img src="https://pbs.twimg.com/media/HIXQYEhXkAAyMrO.png" alt="Market Open Roundup" class="w-full rounded-2xl mb-4">
           <h3 class="font-semibold">As We Approach The Open – 5/15/26</h3>
           <p class="text-emerald-400 text-sm">@neilksethi</p>
-          <p class="text-zinc-400 text-sm mt-2">Global markets roundup ahead of US open.</p>
         </div>
         <div class="bg-zinc-950 rounded-3xl p-6 border border-zinc-800">
           <img src="https://pbs.twimg.com/media/HIXU297XoAApwpx.png" alt="30-Year Yield" class="w-full rounded-2xl mb-4">
           <h3 class="font-semibold">30-Year Yield Back at Historic Levels</h3>
           <p class="text-emerald-400 text-sm">@biancoresearch</p>
-          <p class="text-zinc-400 text-sm mt-2">Last time the 30-year traded here, George W. Bush was President.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- PRICING -->
-  <section id="premium" class="py-20 bg-emerald-900/20">
+  <section id="premium" class="py-20">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-semibold text-center mb-12">Choose your plan</h2>
+      <h2 class="text-4xl font-semibold text-center mb-4">Simple pricing. Real value.</h2>
+      <p class="text-center text-zinc-400 mb-12">Choose the plan that fits how deep you want to go.</p>
 
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <!-- Free Tier -->
-        <div class="bg-zinc-950 rounded-3xl p-8 border border-zinc-800">
-          <h3 class="text-2xl font-semibold mb-2">Free</h3>
-          <p class="text-emerald-400 text-xl font-medium">5 charts daily</p>
-          <p class="text-zinc-400 mt-8 text-sm">Perfect for getting started</p>
-          <button onclick="alert('Free signup form would go here — connect Beehiiv free tier')" 
-                  class="mt-12 w-full bg-white text-black py-6 rounded-2xl font-semibold text-xl">
-            Start Free
-          </button>
+      <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <!-- Free -->
+        <div id="free" class="bg-zinc-900 rounded-3xl p-10 border border-zinc-700">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-3xl font-semibold">Free</h3>
+              <p class="text-emerald-400 text-2xl font-medium mt-1">5 charts daily</p>
+            </div>
+            <span class="px-5 py-2 bg-zinc-800 text-white rounded-2xl text-sm font-medium">No card required</span>
+          </div>
+          <ul class="mt-10 space-y-4 text-zinc-300">
+            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i>5 highest-signal charts every morning</li>
+            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i>Market snapshot</li>
+            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i>Email delivery</li>
+          </ul>
+          <a href="#" class="mt-12 block w-full text-center bg-white text-black font-semibold py-6 rounded-3xl text-xl">Start Free</a>
         </div>
 
-        <!-- Premium Tier -->
-        <div class="bg-zinc-950 rounded-3xl p-8 border border-emerald-400 relative">
-          <div class="absolute -top-3 right-8 bg-emerald-400 text-black text-xs font-semibold px-4 py-1 rounded-full">Most Popular</div>
-          <h3 class="text-2xl font-semibold mb-2">Premium</h3>
-          <div class="flex items-baseline gap-3">
-            <span class="text-6xl font-bold">$15</span>
-            <span class="text-xl text-zinc-400">/month</span>
+        <!-- Premium -->
+        <div class="bg-zinc-900 rounded-3xl p-10 border border-emerald-400 relative">
+          <div class="absolute -top-4 right-8 bg-emerald-400 text-black text-xs font-semibold px-6 py-1 rounded-3xl">RECOMMENDED</div>
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-3xl font-semibold">Premium</h3>
+              <p class="text-emerald-400 text-2xl font-medium mt-1">$15/mo or $149/year</p>
+            </div>
           </div>
-          <p class="text-emerald-400">or $149/year (save 17%)</p>
-          <p class="text-zinc-400 mt-8 text-sm">12 charts daily + deeper insights</p>
-          <button onclick="alert('Premium checkout would go here — connect Stripe or Beehiiv paid plan')" 
-                  class="mt-12 w-full bg-emerald-400 text-black py-6 rounded-2xl font-semibold text-xl">
-            Subscribe to Premium
-          </button>
+          <ul class="mt-10 space-y-4 text-zinc-300">
+            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i>12 highest-signal charts daily</li>
+            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i>Deeper investor insights</li>
+            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i>Market snapshot + takeaway</li>
+            <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-400"></i>Archive access</li>
+          </ul>
+          <a href="#" class="mt-12 block w-full text-center bg-emerald-400 text-black font-semibold py-6 rounded-3xl text-xl">Subscribe to Premium</a>
         </div>
       </div>
     </div>
