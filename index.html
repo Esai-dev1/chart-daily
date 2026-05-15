@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Charted Insight • Highest-Signal Finance Charts</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
-    body { font-family: system-ui, -apple-system, sans-serif; }
+    body { font-family: 'Inter', system_ui, sans-serif; }
     .hero-bg { background: linear-gradient(90deg, #0a0a0a 0%, #1a1a2e 100%); }
   </style>
 </head>
 <body class="bg-zinc-950 text-white">
 
   <!-- HERO -->
-  <section class="hero-bg py-24">
+  <section class="hero-bg py-20">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h1 class="text-6xl font-bold tracking-tighter leading-none mb-6">
+      <h1 class="text-6xl font-bold tracking-tighter leading-none mb-4">
         The highest-signal finance charts,<br>curated daily by experienced investors.
       </h1>
       <p class="text-2xl text-zinc-400 max-w-2xl mx-auto mb-10">
@@ -23,11 +24,72 @@
       </p>
 
       <!-- Beehiiv Form -->
-      <div class="max-w-md mx-auto mb-8">
+      <div class="max-w-md mx-auto">
         <div data-beehiiv-form="5e6f8b70-cc6a-428b-b0a5-64d4d2a98b22"></div>
       </div>
 
-      <p class="text-sm text-zinc-500">Already 1,247 serious investors joined • Next edition drops in 14 hours</p>
+      <p class="text-sm text-zinc-500 mt-8">Already 1,247 serious investors joined • Next edition drops in 14 hours</p>
+    </div>
+  </section>
+
+  <!-- SAMPLE EDITION -->
+  <section class="py-16 bg-zinc-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-4">See exactly what you’ll wake up to</h2>
+      <p class="text-center text-zinc-400 mb-12">Charted Insight – May 15, 2026</p>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-zinc-950 rounded-3xl p-6 border border-zinc-800">
+          <img src="https://pbs.twimg.com/media/HIXQYEhXkAAyMrO.png" alt="Market Open Roundup" class="w-full rounded-2xl mb-4">
+          <h3 class="font-semibold">As We Approach The Open – 5/15/26</h3>
+          <p class="text-emerald-400 text-sm">@neilksethi</p>
+          <p class="text-zinc-400 text-sm mt-2">Investor Insight: Global markets roundup ahead of US open.</p>
+        </div>
+        <div class="bg-zinc-950 rounded-3xl p-6 border border-zinc-800">
+          <img src="https://pbs.twimg.com/media/HIXU297XoAApwpx.png" alt="30-Year Yield" class="w-full rounded-2xl mb-4">
+          <h3 class="font-semibold">30-Year Yield Back at Historic Levels</h3>
+          <p class="text-emerald-400 text-sm">@biancoresearch</p>
+          <p class="text-zinc-400 text-sm mt-2">Investor Insight: Last time the 30-year traded here, George W. Bush was President.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SECTION -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-12">Why serious investors subscribe</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <i class="fas fa-hand-holding-heart text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Curated by experienced investors</h3>
+          <p class="text-zinc-400">Hand-selected charts and context from decades of real-world investing experience.</p>
+        </div>
+        <div class="text-center">
+          <i class="fas fa-bolt text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Beat the noise</h3>
+          <p class="text-zinc-400">Only the 15 highest-signal charts each day. No spam. No filler.</p>
+        </div>
+        <div class="text-center">
+          <i class="fas fa-clock text-5xl text-emerald-400 mb-4"></i>
+          <h3 class="font-semibold text-xl mb-2">Save hours every morning</h3>
+          <p class="text-zinc-400">Start your day with the clearest picture of what actually matters in the markets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section id="waitlist" class="py-20 bg-emerald-900/20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold mb-4">Launch special pricing</h2>
+      <p class="text-2xl text-zinc-400 mb-6">First 500 members only</p>
+      
+      <div class="max-w-md mx-auto">
+        <div data-beehiiv-form="5e6f8b70-cc6a-428b-b0a5-64d4d2a98b22"></div>
+      </div>
+
+      <p class="text-xs text-zinc-500 mt-10">Cancel anytime • 30-day money-back guarantee</p>
     </div>
   </section>
 
@@ -35,7 +97,7 @@
     © Charted Insight 2026 • Curated for serious investors
   </footer>
 
-  <!-- BEEHIIV SCRIPT - Must be at the very bottom -->
+  <!-- BEEHIIV SCRIPT -->
   <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="5e6f8b70-cc6a-428b-b0a5-64d4d2a98b22"></script>
 </body>
 </html>
