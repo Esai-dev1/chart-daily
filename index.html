@@ -7,8 +7,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
-    body { font-family: 'Inter', system_ui, sans-serif; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
     .hero-bg { background: linear-gradient(90deg, #0a0a0a 0%, #1a1a2e 100%); }
+    .carousel { scrollbar-width: none; }
+    .carousel::-webkit-scrollbar { display: none; }
+    .chart-card img {
+      transition: transform 0.3s ease;
+    }
+    .chart-card:hover img {
+      transform: scale(1.03);
+    }
   </style>
 </head>
 <body class="bg-zinc-950 text-white">
@@ -21,7 +29,7 @@
       </h1>
       <p class="text-3xl text-zinc-400 max-w-3xl mx-auto mb-12">
         12 curated charts + insights every morning.<br>
-        Zero Fluff.  Zero Ads.
+        Zero Fluff. Zero Ads.
       </p>
 
       <div class="max-w-md mx-auto">
@@ -32,8 +40,42 @@
     </div>
   </section>
 
+  <!-- CAROUSEL - Zoomed Out Version -->
+  <section class="py-16 bg-zinc-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center mb-8">Featured Charts</h2>
+      
+      <div class="carousel flex gap-6 overflow-x-auto snap-x snap-mandatory pb-6">
+        <div class="snap-start flex-shrink-0 w-72 chart-card">
+          <img src="https://pbs.twimg.com/media/HIXQYEhXkAAyMrO.png" class="rounded-3xl shadow-2xl" alt="Chart 1">
+        </div>
+        <div class="snap-start flex-shrink-0 w-72 chart-card">
+          <img src="https://pbs.twimg.com/media/HIXU297XoAApwpx.png" class="rounded-3xl shadow-2xl" alt="Chart 2">
+        </div>
+        <div class="snap-start flex-shrink-0 w-72 chart-card">
+          <img src="https://pbs.twimg.com/media/HIXdkGdXAAAV7wj.png" class="rounded-3xl shadow-2xl" alt="Chart 3">
+        </div>
+        <div class="snap-start flex-shrink-0 w-72 chart-card">
+          <img src="https://pbs.twimg.com/media/HIW5r8uXUAACPuD.png" class="rounded-3xl shadow-2xl" alt="Chart 4">
+        </div>
+        <div class="snap-start flex-shrink-0 w-72 chart-card">
+          <img src="https://pbs.twimg.com/media/HIWzhgBW4AAg8mx.jpg" class="rounded-3xl shadow-2xl" alt="Chart 5">
+        </div>
+        <div class="snap-start flex-shrink-0 w-72 chart-card">
+          <img src="https://pbs.twimg.com/media/HIWyYw_W8AANta0.jpg" class="rounded-3xl shadow-2xl" alt="Chart 6">
+        </div>
+        <div class="snap-start flex-shrink-0 w-72 chart-card">
+          <img src="https://pbs.twimg.com/media/HIW31PIXsAAEd4C.jpg" class="rounded-3xl shadow-2xl" alt="Chart 7">
+        </div>
+        <div class="snap-start flex-shrink-0 w-72 chart-card">
+          <img src="https://pbs.twimg.com/media/HIRLqGkWIAAN9WM.png" class="rounded-3xl shadow-2xl" alt="Chart 8">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- BENEFITS -->
-  <section class="py-20 bg-zinc-900">
+  <section class="py-20 bg-zinc-950">
     <div class="max-w-6xl mx-auto px-6">
       <div class="grid md:grid-cols-3 gap-10">
         <div class="text-center">
@@ -50,27 +92,6 @@
           <i class="fas fa-clock text-5xl text-emerald-400 mb-4"></i>
           <h3 class="font-semibold text-xl mb-2">Save Hours Every Morning</h3>
           <p class="text-zinc-400">Start your day with the clearest picture of what’s actually driving the markets.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SAMPLE CHARTS -->
-  <section class="py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-4xl font-semibold text-center mb-4">See exactly what you’ll wake up to</h2>
-      <p class="text-center text-zinc-400 mb-12">Charted Insight – May 15, 2026</p>
-
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-zinc-950 rounded-3xl p-6 border border-zinc-800">
-          <img src="https://pbs.twimg.com/media/HIXQYEhXkAAyMrO.png" alt="Market Open Roundup" class="w-full rounded-2xl mb-4">
-          <h3 class="font-semibold">As We Approach The Open – 5/15/26</h3>
-          <p class="text-emerald-400 text-sm">@neilksethi</p>
-        </div>
-        <div class="bg-zinc-950 rounded-3xl p-6 border border-zinc-800">
-          <img src="https://pbs.twimg.com/media/HIXU297XoAApwpx.png" alt="30-Year Yield" class="w-full rounded-2xl mb-4">
-          <h3 class="font-semibold">30-Year Yield Back at Historic Levels</h3>
-          <p class="text-emerald-400 text-sm">@biancoresearch</p>
         </div>
       </div>
     </div>
